@@ -1,4 +1,8 @@
-<form method="post" action="">
-  {% csrf_token%} {{form.as_p}}
-  <input type="submit" value="submit" />
+{% load static%} {% block content %}
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Submit</button>
 </form>
+
+<p><a href="{% url 'landing' %}">Return to home</a></p>
+{% endblock %}

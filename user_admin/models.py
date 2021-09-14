@@ -17,3 +17,7 @@ class BlogPost(models.Model):
     body = models.TextField()
     links = models.URLField()
     created = models.DateTimeField(default=timezone.now)
+    image = models.FileField(upload_to='images/')
+
+class images(models.Model):
+    document = models.FileField(upload_to='images/')

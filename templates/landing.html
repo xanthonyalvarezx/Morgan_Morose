@@ -1,7 +1,11 @@
+{% load static%}
+
 <h1>The Mundane Life of Morgan Morose</h1>
 {% for post in posts%}
 <p>{{post.title}}</p>
 <p>{{post.body}}</p>
-<p>for more info check out -> {{post.links}}</p>
+<img src={{post.image}}/>
+<p>for more info check out -> {{post.links|urlize}}</p>
 <p>{{post.created}}</p>
-<p>{{post.author}} {%endfor%}</p>
+<p>{{post.author}}
+<hr /> {%endfor%}</p>
