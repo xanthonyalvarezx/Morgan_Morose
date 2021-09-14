@@ -18,9 +18,9 @@ def add_post(request):
                 links=data['links']
             
             )
-            return HttpResponseRedirect(reverse('landing'))
-        form = BlogPostForm()
-        return render(request, 'generic_form.html', {'form':form})
+        return HttpResponseRedirect(reverse('landing'))
+    form = BlogPostForm()
+    return render(request, 'generic_form.html', {'form':form})
 
 
 # view for creating a admin user 
