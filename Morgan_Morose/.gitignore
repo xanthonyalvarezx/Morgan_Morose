@@ -8,5 +8,4 @@ ignore.py
 
 #for pushing to git hub
 
-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
-https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+git push https://\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@github.com/\xanthonyalvarezx/\Morgan_Morose.git
