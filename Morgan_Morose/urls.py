@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from user_admin import urls as admin_urls
+from landing import urls as landing_urls
 from landing.views import landing
 from django.conf import settings
 from django.conf.urls.static import static
@@ -24,7 +25,8 @@ urlpatterns = [
 
     path('', landing, name='landing'),
     path('admin/', admin.site.urls),
-    path('', include(admin_urls))
+    path('', include(admin_urls)),
+    path('', include(landing_urls))
 ]
 
 if settings.DEBUG:

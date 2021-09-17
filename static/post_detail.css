@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(32, 193, 177, 0.654);
+    color: hotpink;
+    
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jumbotron{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hotpink;
+    text-shadow:1px 1px black ;
+    
+    width: 100vw;
+}
+
+
+
+.card-bottom, .card-top{
+    display:flex;
+    flex-direction: column;
+    color: hotpink;
+    background-color: transparent;
+    width: fit-content;
+    height: 50px;
+    font-size: 11px;
+    
+    
+
+    
+    
+}
+
+.nav-link{
+    color: hotpink;
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    width: 100vw;
+}
+#login-link{
+    font-size: 11px;
+}

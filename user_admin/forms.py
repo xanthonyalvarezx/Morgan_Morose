@@ -16,6 +16,7 @@ class BlogPostForm(forms.ModelForm):
             'author',
             'title',
             'body',
+            'catagory',
             'links',
             'image'
 
@@ -32,9 +33,18 @@ class BlogPostForm(forms.ModelForm):
 
 
 class AuthorForm(forms.ModelForm):
+    
     class Meta:
         model = Author
+    
         fields = [
             'name',
+            'password',
             'title'
         ]
+
+
+class LoginForm(forms.Form):
+    username = forms.CharField(max_length='150')
+    password = forms.CharField(widget=forms.PasswordInput)
+    
