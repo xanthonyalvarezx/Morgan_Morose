@@ -7,4 +7,6 @@ def landing(request):
 
 def post_detail(request, post_id: int):
     posts = BlogPost.objects.get(id=post_id)
+    
+
     return render(request, "post_detail.html", {"posts": posts})
