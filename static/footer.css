@@ -1,0 +1,33 @@
+*{  
+    box-sizing: border-box;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    width: 100vw;
+
+}
+
+.social-icon-list{
+    display: flex;
+    justify-content: space-evenly;
+    
+    list-style: none;
+    
+    width: 100vw;
+
+}
+
+.social-link{
+   margin-right: 100px;
+    
+}
+
+.social-icon-image{
+    width: 30px;
+    height: 30px;
+
+}
